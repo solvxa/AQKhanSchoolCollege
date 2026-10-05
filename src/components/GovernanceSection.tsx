@@ -90,7 +90,7 @@ export default function GovernanceSection() {
               {/* Right Column: Principal Image */}
               <div className="lg:col-span-4 relative min-h-[280px] sm:min-h-[320px] lg:min-h-full bg-slate-100 overflow-hidden">
                 <img
-                  src="/Principle/Principle.jpg"
+                  src="/Principle/PrincipleP.jpg"
                   alt="Brig (R) Ejaz Ahmed Najaf - Principal"
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
                 />

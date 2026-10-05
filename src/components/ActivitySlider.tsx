@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export const activitySlides = [
   {
     id: 1,
-    image: "/Activitiies/a%20(1).jpg",
+    image: "/Activitiies/AA%20(1).jpg",
     title: "Annual Academic Convocations & Auditorium Ceremonies",
     category: "Campus Events & Galas",
     badge: "Auditorium & Events",
@@ -14,7 +14,7 @@ export const activitySlides = [
   },
   {
     id: 2,
-    image: "/Activitiies/a%20(2).jpg",
+    image: "/Activitiies/AA%20(2).jpg",
     title: "Inter-Campus Sports Championship & Athletics Gala",
     category: "Athletics & Physical Conditioning",
     badge: "Sports Turf & Grounds",
@@ -22,7 +22,7 @@ export const activitySlides = [
   },
   {
     id: 3,
-    image: "/Activitiies/a%20(3).jpg",
+    image: "/Activitiies/AA%20(3).jpg",
     title: "Indoor Badminton Complex & Fitness Physical Arena",
     category: "Indoor Sports & Recreation",
     badge: "Indoor Sports Complex",
@@ -30,7 +30,7 @@ export const activitySlides = [
   },
   {
     id: 4,
-    image: "/Activitiies/a%20(4).jpg",
+    image: "/Activitiies/AA%20(4).jpg",
     title: "Morning Assemblies, Moral Ethics & House Leadership",
     category: "Discipline & Character",
     badge: "Student Assemblies",
@@ -38,7 +38,7 @@ export const activitySlides = [
   },
   {
     id: 5,
-    image: "/Activitiies/a%20(5).jpg",
+    image: "/Activitiies/AA%20(5).jpg",
     title: "Hands-on Science & STEM Practical Research Laboratories",
     category: "Scientific Inquiry",
     badge: "Physics & Chemistry Labs",
@@ -46,7 +46,7 @@ export const activitySlides = [
   },
   {
     id: 6,
-    image: "/Activitiies/a%20(6).jpg",
+    image: "/Activitiies/AA%20(6).jpg",
     title: "Advanced Computer Science, Robotics & Coding Studios",
     category: "Technology & Future Skills",
     badge: "Digital Innovation Lab",
@@ -54,17 +54,24 @@ export const activitySlides = [
   },
   {
     id: 7,
-    image: "/Activitiies/a%20(7).jpg",
+    image: "/Activitiies/AA%20(7).jpg",
     title: "Central Reference Library & Quiet Research Archives",
     category: "Scholarly Research & Reading",
     badge: "Central Library",
     description: "Comprehensive repository of academic journals, FBISE reference volumes, international encyclopedias, and silent reading cubicles."
   },
+  {
+    id: 8,
+    image: "/Activitiies/AA%20(8).jpg",
+    title: "Art, Creative Design & Cultural Exhibitions",
+    category: "Co-Curricular & Creative Arts",
+    badge: "Arts & Culture",
+    description: "Creative student exhibitions showcasing calligraphic arts, painting, architectural model fabrication, and national cultural celebrations."
+  },
 ];
 
 export default function ActivitySlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
   const [activeModal, setActiveModal] = useState<number | null>(null);
   const [touchStart, setTouchStart] = useState<number | null>(null);
 
@@ -86,14 +93,14 @@ export default function ActivitySlider() {
     setCurrentIndex((prev) => (prev - 1 + total) % total);
   }, [total]);
 
-  // Autoplay timer: changes slide every 4.5 seconds
+  // Continuous autoplay timer: moves smoothly without stopping on hover
   useEffect(() => {
-    if (isHovered || activeModal !== null) return;
+    if (activeModal !== null) return;
     const interval = setInterval(() => {
       nextSlide();
-    }, 4500);
+    }, 4200);
     return () => clearInterval(interval);
-  }, [isHovered, activeModal, nextSlide]);
+  }, [activeModal, nextSlide]);
 
   // Touch swipe support for mobile
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -117,8 +124,6 @@ export default function ActivitySlider() {
   return (
     <div
       className="relative w-full max-w-5xl mx-auto select-none"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
@@ -187,9 +192,9 @@ export default function ActivitySlider() {
         <button
           onClick={prevSlide}
           aria-label="Previous Activity"
-          className="absolute left-1 sm:left-3 md:left-4 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-white/95 backdrop-blur-sm shadow-xl border border-slate-200/90 text-[#00153d] hover:bg-[#e0b252] hover:text-[#00153d] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 group"
+          className="absolute left-1 sm:left-3 md:left-4 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-white/95 backdrop-blur-sm shadow-xl border border-slate-200/90 text-[#00153d] hover:bg-[#e0b252] hover:text-[#00153d] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 group cursor-pointer"
         >
-          <span className="material-symbols-outlined text-xl sm:text-2xl font-bold group-hover:-translate-x-0.5 transition-transform">
+          <span className="material-symbols-outlined text-lg sm:text-2xl font-bold group-hover:-translate-x-0.5 transition-transform">
             chevron_left
           </span>
         </button>
@@ -198,72 +203,72 @@ export default function ActivitySlider() {
         <button
           onClick={nextSlide}
           aria-label="Next Activity"
-          className="absolute right-1 sm:right-3 md:right-4 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-white/95 backdrop-blur-sm shadow-xl border border-slate-200/90 text-[#00153d] hover:bg-[#e0b252] hover:text-[#00153d] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 group"
+          className="absolute right-1 sm:right-3 md:right-4 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-white/95 backdrop-blur-sm shadow-xl border border-slate-200/90 text-[#00153d] hover:bg-[#e0b252] hover:text-[#00153d] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 group cursor-pointer"
         >
-          <span className="material-symbols-outlined text-xl sm:text-2xl font-bold group-hover:translate-x-0.5 transition-transform">
+          <span className="material-symbols-outlined text-lg sm:text-2xl font-bold group-hover:translate-x-0.5 transition-transform">
             chevron_right
           </span>
         </button>
       </div>
 
-      {/* Centered Caption & Title Below Slider (matching user reference) */}
-      <div className="text-center mt-5 sm:mt-6 px-4 max-w-2xl mx-auto">
-        <div className="inline-flex items-center gap-2 px-3 py-0.5 rounded-full bg-[#e0b252]/15 text-[#00153d] text-[11px] font-bold uppercase tracking-wider mb-2">
-          <span>{activeSlide.badge}</span>
-          <span className="text-[#00153d]/30">•</span>
-          <span className="text-[#00153d]/75 font-semibold">{currentIndex + 1} of {total}</span>
+      {/* Dynamic Content Caption Block */}
+      <div className="mt-4 sm:mt-5 text-center max-w-2xl mx-auto px-4 min-h-[88px] sm:min-h-[96px] flex flex-col items-center justify-start">
+        <div className="inline-flex items-center gap-2 mb-1.5">
+          <span className="px-2.5 py-0.5 rounded-full bg-[#00153d] text-[#e0b252] font-bold text-[10.5px] uppercase tracking-wider">
+            {activeSlide.badge}
+          </span>
+          <span className="text-[11px] sm:text-xs text-slate-500 font-medium">
+            {activeSlide.category}
+          </span>
         </div>
-        <h4 className="font-serif font-bold text-lg sm:text-2xl md:text-3xl text-[#00153d] tracking-tight leading-snug">
+        <h4 className="font-serif font-bold text-base sm:text-lg md:text-xl text-[#00153d] leading-snug line-clamp-2">
           {activeSlide.title}
         </h4>
-        <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed font-medium">
+        <p className="text-xs sm:text-sm text-slate-600 mt-1 line-clamp-2 leading-relaxed">
           {activeSlide.description}
         </p>
-
-        {/* Pagination Dots */}
-        <div className="flex items-center justify-center gap-2 mt-4">
-          {activitySlides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentIndex(idx)}
-              aria-label={`Jump to slide ${idx + 1}`}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                idx === currentIndex
-                  ? "w-8 bg-[#e0b252] shadow-sm shadow-[#e0b252]/50"
-                  : "w-2 bg-slate-300 hover:bg-slate-400"
-              }`}
-            />
-          ))}
-        </div>
       </div>
 
-      {/* Lightbox Modal on Center Card Click */}
+      {/* Indicator Dots Bar */}
+      <div className="flex items-center justify-center gap-1.5 sm:gap-2 mt-3">
+        {activitySlides.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrentIndex(idx)}
+            aria-label={`Go to activity ${idx + 1}`}
+            className={`transition-all duration-300 rounded-full cursor-pointer ${
+              idx === currentIndex
+                ? "w-7 sm:w-8 h-2 bg-[#00153d]"
+                : "w-2 h-2 bg-slate-300 hover:bg-slate-400"
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* Full-view Lightbox Modal when active image is clicked */}
       <AnimatePresence>
         {activeModal !== null && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6"
             onClick={() => setActiveModal(null)}
+            className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6"
           >
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl"
               onClick={(e) => e.stopPropagation()}
+              className="relative max-w-4xl w-full bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl"
             >
-              {/* Close Button */}
               <button
                 onClick={() => setActiveModal(null)}
-                className="absolute top-3.5 right-3.5 z-20 w-9 h-9 rounded-full bg-black/60 hover:bg-black text-white flex items-center justify-center transition-colors"
                 aria-label="Close Preview"
+                className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 w-10 h-10 rounded-full bg-black/60 text-white hover:bg-black/90 flex items-center justify-center transition-colors cursor-pointer"
               >
-                <span className="material-symbols-outlined text-xl">close</span>
+                <span className="material-symbols-outlined text-2xl">close</span>
               </button>
-
               <div className="aspect-[16/10] sm:aspect-[16/9] w-full bg-slate-900 relative">
                 <img
                   src={activitySlides[activeModal].image}

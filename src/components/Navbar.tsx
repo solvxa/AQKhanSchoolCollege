@@ -16,12 +16,12 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300">
-      {/* Top Institutional Utility & Message Bar - Hidden on mobile screens */}
+      {/* Top Institutional Utility & Message Bar */}
       <div
         className={`w-full bg-[#0a1e38] text-white/90 border-b border-white/10 transition-all duration-300 ease-in-out overflow-hidden z-20 hidden md:block ${
           isScrolled
             ? "max-h-0 opacity-0 py-0 border-b-0 -translate-y-2 pointer-events-none"
-            : "max-h-12 opacity-100 py-1.5 translate-y-0"
+            : "max-h-10 opacity-100 py-1.5 translate-y-0"
         }`}
       >
         <div className="max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between gap-4 text-xs font-medium">
@@ -71,16 +71,16 @@ export default function Navbar() {
       </div>
 
       {/* Main Branding & Navigation Container */}
-      <div className={`w-full bg-white/98 backdrop-blur-md border-b border-slate-200/90 shadow-xs transition-all duration-300 ${
-        isScrolled ? "py-1.5 sm:py-2 md:py-2.5 shadow-md" : "py-2 sm:py-2.5 md:py-3.5"
+      <div className={`w-full bg-white/98 backdrop-blur-md border-b border-slate-200/90 transition-all duration-300 ${
+        isScrolled ? "py-1.5 sm:py-2 md:py-2 shadow-sm" : "py-2 sm:py-2.5 md:py-2.5"
       }`}>
-        <div className="max-w-[1280px] mx-auto px-3 sm:px-5 md:px-6 lg:px-8 flex items-center justify-between gap-2 sm:gap-4">
-          {/* School Logo + Identity (Increased Size) */}
-          <a href="#" className="flex items-center gap-3 sm:gap-4 md:gap-5 group min-w-0 flex-1">
+        <div className="max-w-[1280px] mx-auto px-3 sm:px-5 md:px-6 lg:px-8 flex items-center justify-between gap-3 sm:gap-4">
+          {/* School Logo + Identity */}
+          <a href="#" className="flex items-center gap-3 sm:gap-4 group min-w-0 flex-1">
             <div className={`relative shrink-0 transition-all duration-300 flex items-center justify-center ${
               isScrolled
-                ? "w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18"
-                : "w-14 h-14 xs:w-16 xs:h-16 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-22 lg:h-22"
+                ? "w-12 h-12 sm:w-13 sm:h-13 md:w-14 md:h-14 lg:w-15 lg:h-15"
+                : "w-13 h-13 xs:w-14 xs:h-14 sm:w-15 sm:h-15 md:w-16 md:h-16 lg:w-18 lg:h-18"
             }`}>
               <img
                 src="/Logo/logo.png"
@@ -91,12 +91,12 @@ export default function Navbar() {
             <div className="flex flex-col justify-center text-left min-w-0">
               <span className={`font-serif font-extrabold text-[#00153d] tracking-tight leading-tight transition-all duration-300 whitespace-nowrap truncate ${
                 isScrolled
-                  ? "text-[16px] xs:text-[17.5px] sm:text-xl md:text-2xl lg:text-[26px]"
-                  : "text-[17.5px] xs:text-[19px] sm:text-2xl md:text-3xl lg:text-[30px]"
+                  ? "text-[16px] xs:text-[17px] sm:text-lg md:text-xl lg:text-[22px]"
+                  : "text-[17px] xs:text-[18px] sm:text-xl md:text-2xl lg:text-[25px]"
               }`}>
                 Dr. A.Q. Khan School &amp; College
               </span>
-              <div className="text-[11.5px] xs:text-xs sm:text-[13px] md:text-sm text-slate-500 font-medium truncate flex items-center gap-1.5 mt-0.5 whitespace-nowrap">
+              <div className="text-[11px] xs:text-[11.5px] sm:text-xs md:text-[13px] text-slate-500 font-medium truncate flex items-center gap-1.5 mt-0.5 whitespace-nowrap">
                 <span>Safari-1 Campus, Bahria Town Islamabad</span>
                 <span className="text-slate-300 hidden sm:inline">•</span>
                 <span className="text-amber-800/90 font-semibold hidden md:inline">Bahria Town Education Trust</span>
@@ -104,32 +104,32 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* Same Sized Student & Teacher Login Buttons + Apply Online CTA */}
+          {/* Student & Teacher Login Buttons + Apply Online CTA */}
           <div className="hidden xl:flex items-center gap-3 shrink-0">
             <a
               href="#student-portal"
-              className="h-10 w-[140px] inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white text-slate-700 text-xs font-semibold hover:border-[#00153d] hover:text-[#00153d] hover:bg-slate-50 active:scale-98 transition-all shadow-xs shrink-0"
+              className="h-9 w-[130px] inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white text-slate-700 text-xs font-semibold hover:border-[#00153d] hover:text-[#00153d] hover:bg-slate-50 active:scale-98 transition-all shadow-xs shrink-0"
             >
-              <span className="material-symbols-outlined text-[17px] text-[#00153d]">school</span>
+              <span className="material-symbols-outlined text-[16px] text-[#00153d]">school</span>
               <span>Student Login</span>
             </a>
             <a
               href="#teacher-portal"
-              className="h-10 w-[140px] inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white text-slate-700 text-xs font-semibold hover:border-[#00153d] hover:text-[#00153d] hover:bg-slate-50 active:scale-98 transition-all shadow-xs shrink-0"
+              className="h-9 w-[130px] inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white text-slate-700 text-xs font-semibold hover:border-[#00153d] hover:text-[#00153d] hover:bg-slate-50 active:scale-98 transition-all shadow-xs shrink-0"
             >
-              <span className="material-symbols-outlined text-[17px] text-[#00153d]">co_present</span>
+              <span className="material-symbols-outlined text-[16px] text-[#00153d]">co_present</span>
               <span>Teacher Login</span>
             </a>
             <a
               href="#quick-inquiry"
-              className="h-10 px-5 inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#d4af37] via-[#c59a3f] to-[#b3892b] text-[#00153d] font-bold text-xs shadow hover:shadow-md hover:brightness-105 active:scale-98 transition-all shrink-0"
+              className="h-9 px-4.5 inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#d4af37] via-[#c59a3f] to-[#b3892b] text-[#00153d] font-bold text-xs shadow hover:shadow-md hover:brightness-105 active:scale-98 transition-all shrink-0"
             >
-              <span className="material-symbols-outlined text-[17px]">edit_note</span>
+              <span className="material-symbols-outlined text-[16px]">edit_note</span>
               <span>Apply Online</span>
               <span className="material-symbols-outlined text-[15px]">arrow_forward</span>
             </a>
-            <div className="w-10 h-10 rounded-lg bg-[#00153d] text-white flex items-center justify-center shrink-0 ml-0.5 shadow-xs" title="Portals & Account">
-              <span className="material-symbols-outlined text-[19px]">person</span>
+            <div className="w-9 h-9 rounded-lg bg-[#00153d] text-white flex items-center justify-center shrink-0 ml-0.5 shadow-xs" title="Portals & Account">
+              <span className="material-symbols-outlined text-[18px]">person</span>
             </div>
           </div>
 
@@ -137,7 +137,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg text-[#00153d] hover:bg-slate-100 focus:outline-none flex items-center justify-center transition-colors shrink-0 ml-1"
+            className="lg:hidden p-1.5 rounded-lg text-[#00153d] hover:bg-slate-100 focus:outline-none flex items-center justify-center transition-colors shrink-0 ml-1"
             aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
@@ -147,11 +147,11 @@ export default function Navbar() {
 
       {/* Navigation Links Bar (Desktop) */}
       <div className="bg-white border-b border-slate-200 hidden lg:block shadow-xs">
-        <div className="h-11 max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-center gap-0.5 text-xs font-semibold text-slate-600">
+        <div className="h-10 max-w-[1280px] mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-center gap-1 text-xs font-semibold text-slate-600">
           {/* Home */}
           <a
             href="#"
-            className="px-4 py-2 rounded-md bg-[#00153d] text-white text-xs font-semibold transition-all"
+            className="px-3.5 py-1.5 rounded-md bg-[#00153d] text-white text-xs font-bold transition-all"
           >
             Home
           </a>
@@ -161,49 +161,49 @@ export default function Navbar() {
 
           {/* About Us */}
           <div className="relative group">
-            <button className="px-3 py-2 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors flex items-center gap-0.5">
+            <button className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors flex items-center gap-0.5 cursor-pointer">
               About Us
               <span className="material-symbols-outlined text-[14px]">expand_more</span>
             </button>
             <div className="absolute left-0 top-full pt-1 hidden group-hover:block z-50 w-52">
-              <div className="bg-white rounded-xl shadow-xl border border-slate-200 p-1.5 flex flex-col gap-0.5">
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#overview">Overview</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#leadership">Leadership</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#faculty">Faculty</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#history">History</a>
+              <div className="bg-white rounded-xl shadow-xl border border-slate-200 p-1.5 flex flex-col gap-0.5 text-xs">
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#overview">Overview</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#leadership">Leadership</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#faculty">Faculty</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#history">History</a>
               </div>
             </div>
           </div>
 
           {/* Campus & Wings */}
           <div className="relative group">
-            <button className="px-3 py-2 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors flex items-center gap-0.5">
+            <button className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors flex items-center gap-0.5 cursor-pointer">
               Campus &amp; Wings
               <span className="material-symbols-outlined text-[14px]">expand_more</span>
             </button>
-            <div className="absolute left-0 top-full pt-1 hidden group-hover:block z-50 w-64">
-              <div className="bg-white rounded-xl shadow-xl border border-slate-200 p-1.5 flex flex-col gap-0.5">
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#pre-school">Pre-School</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#primary-wing">Primary Wing</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#girls-wing">Girls Wing</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#boys-wing">Boys Wing</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#science-labs">Science &amp; Computer Labs</a>
+            <div className="absolute left-0 top-full pt-1 hidden group-hover:block z-50 w-60">
+              <div className="bg-white rounded-xl shadow-xl border border-slate-200 p-1.5 flex flex-col gap-0.5 text-xs">
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#pre-school">Pre-School</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#primary-wing">Primary Wing</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#girls-wing">Girls Wing</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#boys-wing">Boys Wing</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#science-labs">Science &amp; Computer Labs</a>
               </div>
             </div>
           </div>
 
           {/* Co-Curricular */}
           <div className="relative group">
-            <button className="px-3 py-2 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors flex items-center gap-0.5">
+            <button className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors flex items-center gap-0.5 cursor-pointer">
               Co-Curricular
               <span className="material-symbols-outlined text-[14px]">expand_more</span>
             </button>
             <div className="absolute left-0 top-full pt-1 hidden group-hover:block z-50 w-56">
-              <div className="bg-white rounded-xl shadow-xl border border-slate-200 p-1.5 flex flex-col gap-0.5">
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#academic-houses">Academic Houses</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#sports-facilities">Sports Facilities</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#mega-events">Mega Events</a>
-                <a className="px-3 py-2 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#excursions">Excursions</a>
+              <div className="bg-white rounded-xl shadow-xl border border-slate-200 p-1.5 flex flex-col gap-0.5 text-xs">
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#academic-houses">Academic Houses</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#sports-facilities">Sports Facilities</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#mega-events">Mega Events</a>
+                <a className="px-3 py-1.5 text-slate-700 hover:bg-slate-100 hover:text-[#00153d] rounded-lg transition-colors" href="#excursions">Excursions</a>
               </div>
             </div>
           </div>
@@ -211,14 +211,14 @@ export default function Navbar() {
           {/* Divider */}
           <span className="w-px h-4 bg-slate-200 mx-1.5 shrink-0" />
 
-          <a className="px-3 py-2 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors" href="#academic-calendar">Academic Calendar</a>
-          <a className="px-3 py-2 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors" href="#gallery">Gallery</a>
-          <a className="px-3 py-2 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors" href="#downloads">Downloads</a>
+          <a className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors" href="#academic-calendar">Academic Calendar</a>
+          <a className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors" href="#gallery">Gallery</a>
+          <a className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors" href="#downloads">Downloads</a>
 
           {/* Divider */}
           <span className="w-px h-4 bg-slate-200 mx-1.5 shrink-0" />
 
-          <a className="px-3 py-2 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors" href="#quick-inquiry">Contact Us</a>
+          <a className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors" href="#quick-inquiry">Contact Us</a>
         </div>
       </div>
 

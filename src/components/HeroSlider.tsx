@@ -25,7 +25,7 @@ export const heroSlides = [
     align: "left" as const,
   },
   {
-    image: "/Hero section/H3.jpeg",
+    image: "/Hero section/H4.png",
     tag: "FBISE Affiliated College (Code: 0741/2012)",
     title: "Character",
     titleAccent: "Before Career",
@@ -89,7 +89,7 @@ export default function HeroSlider() {
     <section
       className="relative w-full overflow-hidden bg-[#07132b] select-none"
       style={{
-        height: "calc(100vh - 166px)",
+        height: "calc(100vh - 149px)",
         minHeight: "560px",
         maxHeight: "860px",
       }}

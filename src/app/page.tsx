@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="w-full pt-[72px] xs:pt-[78px] sm:pt-[84px] md:pt-[124px] lg:pt-[160px] bg-background">
+      <main className="w-full pt-[66px] xs:pt-[68px] sm:pt-[72px] md:pt-[109px] lg:pt-[149px] bg-background">
         <div className="flex flex-col w-full">
           <div id="hero" className="w-full">
             <HeroSlider />

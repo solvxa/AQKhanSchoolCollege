@@ -51,8 +51,8 @@ export default function FacultySection() {
             {/* Enlarged Top Photo Frame */}
             <div className="relative w-full h-56 sm:h-60 overflow-hidden bg-slate-100 shrink-0">
               <img
-                className="w-full h-full object-cover object-[center_30%] group-hover:scale-105 transition-transform duration-500"
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                src="/Faculty/male.jpg"
                 alt="Prof. Dr. Tariq Mehmood"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#00153d]/50 via-transparent to-transparent opacity-60 group-hover:opacity-75 transition-opacity duration-300" />
@@ -118,8 +118,8 @@ export default function FacultySection() {
             {/* Enlarged Top Photo Frame */}
             <div className="relative w-full h-56 sm:h-60 overflow-hidden bg-slate-100 shrink-0">
               <img
-                className="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-500"
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                src="/Faculty/female.jpg"
                 alt="Mrs. Farzana Kausar"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#00153d]/50 via-transparent to-transparent opacity-60 group-hover:opacity-75 transition-opacity duration-300" />
@@ -185,8 +185,8 @@ export default function FacultySection() {
             {/* Enlarged Top Photo Frame */}
             <div className="relative w-full h-56 sm:h-60 overflow-hidden bg-slate-100 shrink-0">
               <img
-                className="w-full h-full object-cover object-[center_28%] group-hover:scale-105 transition-transform duration-500"
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                src="/Faculty/male.jpg"
                 alt="Engr. Muhammad Rizwan"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#00153d]/50 via-transparent to-transparent opacity-60 group-hover:opacity-75 transition-opacity duration-300" />
@@ -252,8 +252,8 @@ export default function FacultySection() {
             {/* Enlarged Top Photo Frame */}
             <div className="relative w-full h-56 sm:h-60 overflow-hidden bg-slate-100 shrink-0">
               <img
-                className="w-full h-full object-cover object-[center_25%] group-hover:scale-105 transition-transform duration-500"
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                src="/Faculty/female.jpg"
                 alt="Dr. Samina Yasmeen"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#00153d]/50 via-transparent to-transparent opacity-60 group-hover:opacity-75 transition-opacity duration-300" />
@@ -319,8 +319,8 @@ export default function FacultySection() {
             {/* Enlarged Top Photo Frame */}
             <div className="relative w-full h-56 sm:h-60 overflow-hidden bg-slate-100 shrink-0">
               <img
-                className="w-full h-full object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-500"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                src="/Faculty/male.jpg"
                 alt="Prof. Aftab Hussain Shah"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#00153d]/50 via-transparent to-transparent opacity-60 group-hover:opacity-75 transition-opacity duration-300" />
@@ -386,8 +386,8 @@ export default function FacultySection() {
             {/* Enlarged Top Photo Frame */}
             <div className="relative w-full h-56 sm:h-60 overflow-hidden bg-slate-100 shrink-0">
               <img
-                className="w-full h-full object-cover object-[center_28%] group-hover:scale-105 transition-transform duration-500"
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                src="/Faculty/female.jpg"
                 alt="Mrs. Rabia Naeem"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#00153d]/50 via-transparent to-transparent opacity-60 group-hover:opacity-75 transition-opacity duration-300" />
