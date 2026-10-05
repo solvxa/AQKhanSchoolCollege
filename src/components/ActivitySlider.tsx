@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { MdChevronLeft, MdChevronRight, MdClose } from "react-icons/md";
 
 // ═══════════════ CAMPUS ACTIVITIES COVERFLOW SLIDER ═══════════════
 export const activitySlides = [
@@ -194,9 +195,7 @@ export default function ActivitySlider() {
           aria-label="Previous Activity"
           className="absolute left-1 sm:left-3 md:left-4 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-white/95 backdrop-blur-sm shadow-xl border border-slate-200/90 text-[#00153d] hover:bg-[#e0b252] hover:text-[#00153d] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 group cursor-pointer"
         >
-          <span className="material-symbols-outlined text-lg sm:text-2xl font-bold group-hover:-translate-x-0.5 transition-transform">
-            chevron_left
-          </span>
+          <MdChevronLeft className="text-xl sm:text-2xl font-bold group-hover:-translate-x-0.5 transition-transform" />
         </button>
 
         {/* Circular Right Arrow Button (>) */}
@@ -205,9 +204,7 @@ export default function ActivitySlider() {
           aria-label="Next Activity"
           className="absolute right-1 sm:right-3 md:right-4 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-white/95 backdrop-blur-sm shadow-xl border border-slate-200/90 text-[#00153d] hover:bg-[#e0b252] hover:text-[#00153d] flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95 group cursor-pointer"
         >
-          <span className="material-symbols-outlined text-lg sm:text-2xl font-bold group-hover:translate-x-0.5 transition-transform">
-            chevron_right
-          </span>
+          <MdChevronRight className="text-xl sm:text-2xl font-bold group-hover:translate-x-0.5 transition-transform" />
         </button>
       </div>
 
@@ -267,7 +264,7 @@ export default function ActivitySlider() {
                 aria-label="Close Preview"
                 className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 w-10 h-10 rounded-full bg-black/60 text-white hover:bg-black/90 flex items-center justify-center transition-colors cursor-pointer"
               >
-                <span className="material-symbols-outlined text-2xl">close</span>
+                <MdClose className="text-2xl" />
               </button>
               <div className="aspect-[16/10] sm:aspect-[16/9] w-full bg-slate-900 relative">
                 <img

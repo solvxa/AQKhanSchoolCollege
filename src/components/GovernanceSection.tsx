@@ -2,6 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  MdMilitaryTech,
+  MdVerified,
+  MdFlag,
+  MdVisibility,
+  MdCheckCircle,
+  MdStars,
+} from "react-icons/md";
 
 export default function GovernanceSection() {
   return (
@@ -81,7 +89,7 @@ export default function GovernanceSection() {
                   </div>
 
                   <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#00153d]/5 border border-[#00153d]/10 text-[#00153d] text-xs font-bold shadow-sm">
-                    <span className="material-symbols-outlined text-[16px] text-[#e0b252]">military_tech</span>
+                    <MdMilitaryTech className="text-[16px] text-[#e0b252]" />
                     <span>Academic Director</span>
                   </div>
                 </div>
@@ -161,7 +169,7 @@ export default function GovernanceSection() {
                   </div>
 
                   <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#00153d]/5 border border-[#00153d]/10 text-[#00153d] text-xs font-bold shadow-sm">
-                    <span className="material-symbols-outlined text-[16px] text-[#e0b252]">verified</span>
+                    <MdVerified className="text-[16px] text-[#e0b252]" />
                     <span>Chartered Governance</span>
                   </div>
                 </div>
@@ -200,7 +208,7 @@ export default function GovernanceSection() {
                     <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-[#e0b252]/60 transition-all">
                       <div className="flex items-center gap-2 text-[#00153d] font-bold text-sm mb-1.5">
                         <div className="w-7 h-7 rounded-lg bg-[#00153d] text-[#e0b252] flex items-center justify-center shrink-0">
-                          <span className="material-symbols-outlined text-base">flag</span>
+                          <MdFlag className="text-base" />
                         </div>
                         <span>Our Sacred Mission</span>
                       </div>
@@ -213,7 +221,7 @@ export default function GovernanceSection() {
                     <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-[#e0b252]/60 transition-all">
                       <div className="flex items-center gap-2 text-[#00153d] font-bold text-sm mb-1.5">
                         <div className="w-7 h-7 rounded-lg bg-[#00153d] text-[#e0b252] flex items-center justify-center shrink-0">
-                          <span className="material-symbols-outlined text-base">visibility</span>
+                          <MdVisibility className="text-base" />
                         </div>
                         <span>Our National Vision</span>
                       </div>
@@ -228,21 +236,21 @@ export default function GovernanceSection() {
                 <div className="pt-4 mt-5 border-t border-slate-100 flex items-center justify-between flex-wrap gap-3">
                   <div className="flex flex-wrap items-center gap-2 text-xs font-bold text-[#00153d]">
                     <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-[#00153d]/5 text-[#00153d]">
-                      <span className="material-symbols-outlined text-[#e0b252] text-sm">check_circle</span>
+                      <MdCheckCircle className="text-[#e0b252] text-sm" />
                       Moral Ethos
                     </span>
                     <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-[#00153d]/5 text-[#00153d]">
-                      <span className="material-symbols-outlined text-[#e0b252] text-sm">check_circle</span>
+                      <MdCheckCircle className="text-[#e0b252] text-sm" />
                       Scientific Rigor
                     </span>
                     <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-[#00153d]/5 text-[#00153d]">
-                      <span className="material-symbols-outlined text-[#e0b252] text-sm">check_circle</span>
+                      <MdCheckCircle className="text-[#e0b252] text-sm" />
                       FBISE Distinction
                     </span>
                   </div>
 
                   <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#00153d]/5 border border-[#00153d]/10 text-[#00153d] text-xs font-bold shadow-sm">
-                    <span className="material-symbols-outlined text-[16px] text-[#e0b252]">stars</span>
+                    <MdStars className="text-[16px] text-[#e0b252]" />
                     <span>Charter of Excellence</span>
                   </div>
                 </div>

@@ -2,6 +2,17 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  MdSchool,
+  MdScience,
+  MdTerminal,
+  MdFunctions,
+  MdBiotech,
+  MdRecordVoiceOver,
+  MdChildCare,
+  MdVerifiedUser,
+  MdArrowForward,
+} from "react-icons/md";
 
 export default function FacultySection() {
   return (
@@ -80,7 +91,7 @@ export default function FacultySection() {
 
               {/* Qualification Badge */}
               <div className="flex items-center gap-2 text-[11.5px] text-slate-700 font-semibold bg-slate-50 px-2.5 py-1.5 rounded-lg border border-slate-100">
-                <span className="material-symbols-outlined text-[16px] text-[#e0b252] shrink-0">school</span>
+                <MdSchool className="text-[16px] text-[#e0b252] shrink-0" />
                 <span className="truncate">Ph.D Physical Chemistry • M.Sc Physics (QAU)</span>
               </div>
 
@@ -100,7 +111,7 @@ export default function FacultySection() {
             <div className="p-5 pt-0">
               <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>FSc Pre-Engineering &amp; Pre-Medical</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">science</span>
+                <MdScience className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -147,7 +158,7 @@ export default function FacultySection() {
 
               {/* Qualification Badge */}
               <div className="flex items-center gap-2 text-[11.5px] text-slate-700 font-semibold bg-slate-50 px-2.5 py-1.5 rounded-lg border border-slate-100">
-                <span className="material-symbols-outlined text-[16px] text-[#e0b252] shrink-0">school</span>
+                <MdSchool className="text-[16px] text-[#e0b252] shrink-0" />
                 <span className="truncate">MS Computer Science (FAST) • Certified Educator</span>
               </div>
 
@@ -167,7 +178,7 @@ export default function FacultySection() {
             <div className="p-5 pt-0">
               <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>ICS &amp; Modern Computing Suites</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">terminal</span>
+                <MdTerminal className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -214,7 +225,7 @@ export default function FacultySection() {
 
               {/* Qualification Badge */}
               <div className="flex items-center gap-2 text-[11.5px] text-slate-700 font-semibold bg-slate-50 px-2.5 py-1.5 rounded-lg border border-slate-100">
-                <span className="material-symbols-outlined text-[16px] text-[#e0b252] shrink-0">school</span>
+                <MdSchool className="text-[16px] text-[#e0b252] shrink-0" />
                 <span className="truncate">M.Sc Applied Math (PU) • B.Sc Engr (UET)</span>
               </div>
 
@@ -234,7 +245,7 @@ export default function FacultySection() {
             <div className="p-5 pt-0">
               <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>Pre-Engineering &amp; Board Math</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">functions</span>
+                <MdFunctions className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -281,7 +292,7 @@ export default function FacultySection() {
 
               {/* Qualification Badge */}
               <div className="flex items-center gap-2 text-[11.5px] text-slate-700 font-semibold bg-slate-50 px-2.5 py-1.5 rounded-lg border border-slate-100">
-                <span className="material-symbols-outlined text-[16px] text-[#e0b252] shrink-0">school</span>
+                <MdSchool className="text-[16px] text-[#e0b252] shrink-0" />
                 <span className="truncate">Ph.D Molecular Biology • M.Phil (QAU)</span>
               </div>
 
@@ -301,7 +312,7 @@ export default function FacultySection() {
             <div className="p-5 pt-0">
               <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>FSc Pre-Medical Track</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">biotech</span>
+                <MdBiotech className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -348,7 +359,7 @@ export default function FacultySection() {
 
               {/* Qualification Badge */}
               <div className="flex items-center gap-2 text-[11.5px] text-slate-700 font-semibold bg-slate-50 px-2.5 py-1.5 rounded-lg border border-slate-100">
-                <span className="material-symbols-outlined text-[16px] text-[#e0b252] shrink-0">school</span>
+                <MdSchool className="text-[16px] text-[#e0b252] shrink-0" />
                 <span className="truncate">M.A English Lit (NUML) • Cambridge Trainer</span>
               </div>
 
@@ -368,7 +379,7 @@ export default function FacultySection() {
             <div className="p-5 pt-0">
               <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>Oratory &amp; Bilingual Declamations</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">record_voice_over</span>
+                <MdRecordVoiceOver className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -415,7 +426,7 @@ export default function FacultySection() {
 
               {/* Qualification Badge */}
               <div className="flex items-center gap-2 text-[11.5px] text-slate-700 font-semibold bg-slate-50 px-2.5 py-1.5 rounded-lg border border-slate-100">
-                <span className="material-symbols-outlined text-[16px] text-[#e0b252] shrink-0">school</span>
+                <MdSchool className="text-[16px] text-[#e0b252] shrink-0" />
                 <span className="truncate">M.Ed. Early Childhood • AMI Directress</span>
               </div>
 
@@ -435,7 +446,7 @@ export default function FacultySection() {
             <div className="p-5 pt-0">
               <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>Montessori to Grade 5 Foundation</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">child_care</span>
+                <MdChildCare className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -451,7 +462,7 @@ export default function FacultySection() {
         >
           <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4">
             <div className="w-12 h-12 rounded-xl bg-[#e0b252] text-[#00153d] flex items-center justify-center shrink-0 font-bold shadow-md">
-              <span className="material-symbols-outlined text-2xl">verified_user</span>
+              <MdVerifiedUser className="text-2xl" />
             </div>
             <div>
               <h4 className="font-serif font-bold text-lg text-white">Pedagogical Excellence &amp; Academic Guidance</h4>
@@ -466,7 +477,7 @@ export default function FacultySection() {
               className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#e0b252] to-[#c59a3f] text-[#00153d] font-bold text-xs sm:text-sm hover:brightness-110 transition-all shadow-md inline-flex items-center gap-2"
             >
               <span>Book an Academic Consultation</span>
-              <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+              <MdArrowForward className="text-[16px]" />
             </a>
           </div>
         </motion.div>

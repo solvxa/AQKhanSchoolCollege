@@ -1,6 +1,18 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  MdPhone,
+  MdMail,
+  MdLocationOn,
+  MdKeyboardArrowDown,
+  MdSchool,
+  MdCoPresent,
+  MdEditNote,
+  MdArrowForward,
+  MdPerson,
+  MdVerified,
+} from "react-icons/md";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +28,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300">
-      {/* Top Institutional Utility & Message Bar */}
+      {/* Top Institutional Utility & Message Bar - Desktop Only */}
       <div
         className={`w-full bg-[#0a1e38] text-white/90 border-b border-white/10 transition-all duration-300 ease-in-out overflow-hidden z-20 hidden md:block ${
           isScrolled
@@ -31,18 +43,18 @@ export default function Navbar() {
               href="tel:+92515707166"
               className="inline-flex items-center gap-1.5 text-white/90 hover:text-[#f3cf7a] transition-colors"
             >
-              <span className="material-symbols-outlined text-[15px] text-[#e0b252]">call</span>
+              <MdPhone className="text-[14px] text-[#e0b252]" />
               <span>+92 51 5707166 / 0333 5275888</span>
             </a>
             <a
               href="mailto:aqksafari1@gmail.com"
               className="hidden sm:inline-flex items-center gap-1.5 text-white/90 hover:text-[#f3cf7a] transition-colors"
             >
-              <span className="material-symbols-outlined text-[15px] text-[#e0b252]">mail</span>
+              <MdMail className="text-[14px] text-[#e0b252]" />
               <span>aqksafari1@gmail.com</span>
             </a>
             <span className="hidden lg:inline-flex items-center gap-1.5 text-white/70">
-              <span className="material-symbols-outlined text-[15px] text-[#e0b252]">location_on</span>
+              <MdLocationOn className="text-[14px] text-[#e0b252]" />
               <span>Safari Villas-1, Bahria Town, Islamabad</span>
             </span>
           </div>
@@ -70,17 +82,17 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Main Branding & Navigation Container */}
+      {/* Main Branding & Navigation Container - Fixed compact height on mobile (no jump on scroll) */}
       <div className={`w-full bg-white/98 backdrop-blur-md border-b border-slate-200/90 transition-all duration-300 ${
-        isScrolled ? "py-1.5 sm:py-2 md:py-2 shadow-sm" : "py-2 sm:py-2.5 md:py-2.5"
+        isScrolled
+          ? "py-2 md:py-2 shadow-sm"
+          : "py-2 md:py-2.5"
       }`}>
         <div className="max-w-[1280px] mx-auto px-3 sm:px-5 md:px-6 lg:px-8 flex items-center justify-between gap-3 sm:gap-4">
           {/* School Logo + Identity */}
-          <a href="#" className="flex items-center gap-3 sm:gap-4 group min-w-0 flex-1">
-            <div className={`relative shrink-0 transition-all duration-300 flex items-center justify-center ${
-              isScrolled
-                ? "w-12 h-12 sm:w-13 sm:h-13 md:w-14 md:h-14 lg:w-15 lg:h-15"
-                : "w-13 h-13 xs:w-14 xs:h-14 sm:w-15 sm:h-15 md:w-16 md:h-16 lg:w-18 lg:h-18"
+          <a href="#" className="flex items-center gap-2.5 sm:gap-3.5 md:gap-4 group min-w-0 flex-1">
+            <div className={`relative shrink-0 transition-all duration-300 flex items-center justify-center w-12 h-12 xs:w-13 xs:h-13 sm:w-14 sm:h-14 ${
+              isScrolled ? "md:w-14 md:h-14 lg:w-15 lg:h-15" : "md:w-16 md:h-16 lg:w-18 lg:h-18"
             }`}>
               <img
                 src="/Logo/logo.png"
@@ -89,10 +101,8 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col justify-center text-left min-w-0">
-              <span className={`font-serif font-extrabold text-[#00153d] tracking-tight leading-tight transition-all duration-300 whitespace-nowrap truncate ${
-                isScrolled
-                  ? "text-[16px] xs:text-[17px] sm:text-lg md:text-xl lg:text-[22px]"
-                  : "text-[17px] xs:text-[18px] sm:text-xl md:text-2xl lg:text-[25px]"
+              <span className={`font-serif font-extrabold text-[#00153d] tracking-tight leading-tight transition-all duration-300 whitespace-nowrap truncate text-[16px] xs:text-[17px] sm:text-xl md:text-2xl ${
+                isScrolled ? "lg:text-[22px]" : "lg:text-[25px]"
               }`}>
                 Dr. A.Q. Khan School &amp; College
               </span>
@@ -110,26 +120,26 @@ export default function Navbar() {
               href="#student-portal"
               className="h-9 w-[130px] inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white text-slate-700 text-xs font-semibold hover:border-[#00153d] hover:text-[#00153d] hover:bg-slate-50 active:scale-98 transition-all shadow-xs shrink-0"
             >
-              <span className="material-symbols-outlined text-[16px] text-[#00153d]">school</span>
+              <MdSchool className="text-[16px] text-[#00153d]" />
               <span>Student Login</span>
             </a>
             <a
               href="#teacher-portal"
               className="h-9 w-[130px] inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white text-slate-700 text-xs font-semibold hover:border-[#00153d] hover:text-[#00153d] hover:bg-slate-50 active:scale-98 transition-all shadow-xs shrink-0"
             >
-              <span className="material-symbols-outlined text-[16px] text-[#00153d]">co_present</span>
+              <MdCoPresent className="text-[16px] text-[#00153d]" />
               <span>Teacher Login</span>
             </a>
             <a
               href="#quick-inquiry"
               className="h-9 px-4.5 inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#d4af37] via-[#c59a3f] to-[#b3892b] text-[#00153d] font-bold text-xs shadow hover:shadow-md hover:brightness-105 active:scale-98 transition-all shrink-0"
             >
-              <span className="material-symbols-outlined text-[16px]">edit_note</span>
+              <MdEditNote className="text-[16px]" />
               <span>Apply Online</span>
-              <span className="material-symbols-outlined text-[15px]">arrow_forward</span>
+              <MdArrowForward className="text-[15px]" />
             </a>
             <div className="w-9 h-9 rounded-lg bg-[#00153d] text-white flex items-center justify-center shrink-0 ml-0.5 shadow-xs" title="Portals & Account">
-              <span className="material-symbols-outlined text-[18px]">person</span>
+              <MdPerson className="text-[18px]" />
             </div>
           </div>
 
@@ -137,7 +147,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-1.5 rounded-lg text-[#00153d] hover:bg-slate-100 focus:outline-none flex items-center justify-center transition-colors shrink-0 ml-1"
+            className="lg:hidden p-2 rounded-lg text-[#00153d] hover:bg-slate-100 focus:outline-none flex items-center justify-center transition-colors shrink-0 ml-1 cursor-pointer"
             aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
@@ -163,7 +173,7 @@ export default function Navbar() {
           <div className="relative group">
             <button className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors flex items-center gap-0.5 cursor-pointer">
               About Us
-              <span className="material-symbols-outlined text-[14px]">expand_more</span>
+              <MdKeyboardArrowDown className="text-[14px]" />
             </button>
             <div className="absolute left-0 top-full pt-1 hidden group-hover:block z-50 w-52">
               <div className="bg-white rounded-xl shadow-xl border border-slate-200 p-1.5 flex flex-col gap-0.5 text-xs">
@@ -179,7 +189,7 @@ export default function Navbar() {
           <div className="relative group">
             <button className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors flex items-center gap-0.5 cursor-pointer">
               Campus &amp; Wings
-              <span className="material-symbols-outlined text-[14px]">expand_more</span>
+              <MdKeyboardArrowDown className="text-[14px]" />
             </button>
             <div className="absolute left-0 top-full pt-1 hidden group-hover:block z-50 w-60">
               <div className="bg-white rounded-xl shadow-xl border border-slate-200 p-1.5 flex flex-col gap-0.5 text-xs">
@@ -196,7 +206,7 @@ export default function Navbar() {
           <div className="relative group">
             <button className="px-3 py-1.5 rounded-md hover:text-[#00153d] hover:bg-slate-100 transition-colors flex items-center gap-0.5 cursor-pointer">
               Co-Curricular
-              <span className="material-symbols-outlined text-[14px]">expand_more</span>
+              <MdKeyboardArrowDown className="text-[14px]" />
             </button>
             <div className="absolute left-0 top-full pt-1 hidden group-hover:block z-50 w-56">
               <div className="bg-white rounded-xl shadow-xl border border-slate-200 p-1.5 flex flex-col gap-0.5 text-xs">
@@ -245,7 +255,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between text-xs text-slate-500 pt-1">
               <span>Helpline: +92 51 5707166</span>
               <span className="text-emerald-700 font-bold flex items-center gap-1">
-                <span className="material-symbols-outlined text-[14px]">verified</span>
+                <MdVerified className="text-[14px]" />
                 <span>FBISE: 0741/2012</span>
               </span>
             </div>

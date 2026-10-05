@@ -2,6 +2,13 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  MdAutoStories,
+  MdMenuBook,
+  MdMemory,
+  MdVerifiedUser,
+  MdArrowForward,
+} from "react-icons/md";
 
 export default function AboutSection() {
   return (
@@ -65,7 +72,7 @@ export default function AboutSection() {
             {/* 4 Feature Pillars Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full pt-1">
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-[#e0b252]/60 hover:bg-amber-50/20 transition-all flex items-start gap-3">
-                <span className="material-symbols-outlined text-[#c59a3f] text-xl shrink-0 mt-0.5">auto_stories</span>
+                <MdAutoStories className="text-[#c59a3f] text-xl shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-xs sm:text-sm text-[#00153d]">Quranic &amp; Moral Ethos</h4>
                   <p className="text-[11px] sm:text-xs text-slate-500 leading-snug mt-0.5">Nazra Quran, Seerat etiquette &amp; civic values.</p>
@@ -73,7 +80,7 @@ export default function AboutSection() {
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-[#e0b252]/60 hover:bg-amber-50/20 transition-all flex items-start gap-3">
-                <span className="material-symbols-outlined text-[#c59a3f] text-xl shrink-0 mt-0.5">menu_book</span>
+                <MdMenuBook className="text-[#c59a3f] text-xl shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-xs sm:text-sm text-[#00153d]">Library &amp; Research</h4>
                   <p className="text-[11px] sm:text-xs text-slate-500 leading-snug mt-0.5">Central academic library &amp; digital research archives.</p>
@@ -81,7 +88,7 @@ export default function AboutSection() {
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-[#e0b252]/60 hover:bg-amber-50/20 transition-all flex items-start gap-3">
-                <span className="material-symbols-outlined text-[#c59a3f] text-xl shrink-0 mt-0.5">memory</span>
+                <MdMemory className="text-[#c59a3f] text-xl shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-xs sm:text-sm text-[#00153d]">AI &amp; STEM Labs</h4>
                   <p className="text-[11px] sm:text-xs text-slate-500 leading-snug mt-0.5">Hands-on robotics, coding &amp; modern practical wings.</p>
@@ -89,7 +96,7 @@ export default function AboutSection() {
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-[#e0b252]/60 hover:bg-amber-50/20 transition-all flex items-start gap-3">
-                <span className="material-symbols-outlined text-[#c59a3f] text-xl shrink-0 mt-0.5">verified_user</span>
+                <MdVerifiedUser className="text-[#c59a3f] text-xl shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-xs sm:text-sm text-[#00153d]">Safe Gated Campus</h4>
                   <p className="text-[11px] sm:text-xs text-slate-500 leading-snug mt-0.5">24/7 Bahria security &amp; supervised transport fleets.</p>
@@ -104,7 +111,7 @@ export default function AboutSection() {
                 className="px-5 py-2.5 rounded-lg bg-[#00153d] text-white font-bold text-xs sm:text-sm hover:bg-[#0a2356] transition-all inline-flex items-center gap-1.5 shadow-sm"
               >
                 <span>Explore Campus Wings</span>
-                <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                <MdArrowForward className="text-[16px]" />
               </a>
               <a
                 href="#leadership"

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { MdCheckCircle, MdArrowForward } from "react-icons/md";
 import ActivityCoverflowSlider from "./ActivitySlider";
 
 export default function AcademicWingsSection() {
@@ -67,11 +68,11 @@ export default function AcademicWingsSection() {
                 </p>
                 <ul className="pt-2 space-y-1.5 text-xs text-slate-700 font-medium">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>Activity-driven Montessori environment</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>Nazra Quran with Tajweed initiation</span>
                   </li>
                 </ul>
@@ -84,7 +85,7 @@ export default function AcademicWingsSection() {
                   href="#admissions"
                 >
                   <span>View Montessori Curriculum</span>
-                  <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  <MdArrowForward className="text-[16px] group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
@@ -122,11 +123,11 @@ export default function AcademicWingsSection() {
                 </p>
                 <ul className="pt-2 space-y-1.5 text-xs text-slate-700 font-medium">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>Robotics, Mental Math &amp; Science clubs</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>Speech declamation &amp; creative arts</span>
                   </li>
                 </ul>
@@ -139,7 +140,7 @@ export default function AcademicWingsSection() {
                   href="#admissions"
                 >
                   <span>Explore Primary Division</span>
-                  <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  <MdArrowForward className="text-[16px] group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
@@ -177,11 +178,11 @@ export default function AcademicWingsSection() {
                 </p>
                 <ul className="pt-2 space-y-1.5 text-xs text-slate-700 font-medium">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>100% Female supervisory and teaching staff</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>Dedicated computer &amp; science research labs</span>
                   </li>
                 </ul>
@@ -194,7 +195,7 @@ export default function AcademicWingsSection() {
                   href="#admissions"
                 >
                   <span>Explore Girls Wing</span>
-                  <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  <MdArrowForward className="text-[16px] group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
@@ -231,11 +232,11 @@ export default function AcademicWingsSection() {
                 </p>
                 <ul className="pt-2 space-y-1.5 text-xs text-slate-700 font-medium">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>House captaincy &amp; student council leadership</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>Cricket academy, football turf &amp; sports grounds</span>
                   </li>
                 </ul>
@@ -248,7 +249,7 @@ export default function AcademicWingsSection() {
                   href="#admissions"
                 >
                   <span>Explore Boys Wing</span>
-                  <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  <MdArrowForward className="text-[16px] group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
@@ -285,11 +286,11 @@ export default function AcademicWingsSection() {
                 </p>
                 <ul className="pt-2 space-y-1.5 text-xs text-slate-700 font-medium">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>Top FBISE Board examination preparatory coaching</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[#e0b252] text-[18px] shrink-0">check_circle</span>
+                    <MdCheckCircle className="text-[#e0b252] text-[18px] shrink-0" />
                     <span>National &amp; U.S. University placement counseling</span>
                   </li>
                 </ul>
@@ -302,7 +303,7 @@ export default function AcademicWingsSection() {
                   href="#admissions"
                 >
                   <span>Explore College Programs</span>
-                  <span className="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  <MdArrowForward className="text-[16px] group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>

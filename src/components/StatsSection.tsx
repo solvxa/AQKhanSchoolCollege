@@ -3,6 +3,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AnimatedCounter from "./AnimatedCounter";
+import {
+  MdHistoryEdu,
+  MdVerified,
+  MdGroups,
+  MdSchool,
+  MdScience,
+  MdMilitaryTech,
+} from "react-icons/md";
 
 export default function StatsSection() {
   return (
@@ -25,7 +33,7 @@ export default function StatsSection() {
           {/* Stat 1: 25+ Years Legacy */}
           <div className="flex flex-col items-center text-center px-2 sm:px-3 lg:border-r lg:border-white/10 group transition-transform duration-300 hover:-translate-y-0.5">
             <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-[#e0b252] flex items-center justify-center mb-1.5 group-hover:bg-[#e0b252]/20 group-hover:border-[#e0b252]/50 group-hover:scale-105 transition-all duration-300">
-              <span className="material-symbols-outlined text-lg">history_edu</span>
+              <MdHistoryEdu className="text-lg" />
             </div>
             <div className="font-serif font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-none group-hover:text-[#e0b252] transition-colors flex items-baseline justify-center">
               <AnimatedCounter target={25} />
@@ -42,7 +50,7 @@ export default function StatsSection() {
           {/* Stat 2: 100% FBISE Pass Rate */}
           <div className="flex flex-col items-center text-center px-2 sm:px-3 lg:border-r lg:border-white/10 group transition-transform duration-300 hover:-translate-y-0.5">
             <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-[#e0b252] flex items-center justify-center mb-1.5 group-hover:bg-[#e0b252]/20 group-hover:border-[#e0b252]/50 group-hover:scale-105 transition-all duration-300">
-              <span className="material-symbols-outlined text-lg">verified</span>
+              <MdVerified className="text-lg" />
             </div>
             <div className="font-serif font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-none group-hover:text-[#e0b252] transition-colors flex items-baseline justify-center">
               <AnimatedCounter target={100} />
@@ -59,7 +67,7 @@ export default function StatsSection() {
           {/* Stat 3: 3,500+ Scholars & Alumni */}
           <div className="flex flex-col items-center text-center px-2 sm:px-3 lg:border-r lg:border-white/10 group transition-transform duration-300 hover:-translate-y-0.5">
             <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-[#e0b252] flex items-center justify-center mb-1.5 group-hover:bg-[#e0b252]/20 group-hover:border-[#e0b252]/50 group-hover:scale-105 transition-all duration-300">
-              <span className="material-symbols-outlined text-lg">groups</span>
+              <MdGroups className="text-lg" />
             </div>
             <div className="font-serif font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-none group-hover:text-[#e0b252] transition-colors flex items-baseline justify-center">
               <AnimatedCounter target={3500} />
@@ -76,7 +84,7 @@ export default function StatsSection() {
           {/* Stat 4: 180+ Expert Faculty */}
           <div className="flex flex-col items-center text-center px-2 sm:px-3 lg:border-r lg:border-white/10 group transition-transform duration-300 hover:-translate-y-0.5">
             <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-[#e0b252] flex items-center justify-center mb-1.5 group-hover:bg-[#e0b252]/20 group-hover:border-[#e0b252]/50 group-hover:scale-105 transition-all duration-300">
-              <span className="material-symbols-outlined text-lg">school</span>
+              <MdSchool className="text-lg" />
             </div>
             <div className="font-serif font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-none group-hover:text-[#e0b252] transition-colors flex items-baseline justify-center">
               <AnimatedCounter target={180} />
@@ -93,7 +101,7 @@ export default function StatsSection() {
           {/* Stat 5: 8 Labs (AI & STEM Labs) */}
           <div className="flex flex-col items-center text-center px-2 sm:px-3 lg:border-r lg:border-white/10 group transition-transform duration-300 hover:-translate-y-0.5">
             <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-[#e0b252] flex items-center justify-center mb-1.5 group-hover:bg-[#e0b252]/20 group-hover:border-[#e0b252]/50 group-hover:scale-105 transition-all duration-300">
-              <span className="material-symbols-outlined text-lg">science</span>
+              <MdScience className="text-lg" />
             </div>
             <div className="font-serif font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-none group-hover:text-[#e0b252] transition-colors flex items-baseline justify-center">
               <AnimatedCounter target={8} />
@@ -110,7 +118,7 @@ export default function StatsSection() {
           {/* Stat 6: 50+ Annual Distinctions */}
           <div className="flex flex-col items-center text-center px-2 sm:px-3 group transition-transform duration-300 hover:-translate-y-0.5">
             <div className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 text-[#e0b252] flex items-center justify-center mb-1.5 group-hover:bg-[#e0b252]/20 group-hover:border-[#e0b252]/50 group-hover:scale-105 transition-all duration-300">
-              <span className="material-symbols-outlined text-lg">military_tech</span>
+              <MdMilitaryTech className="text-lg" />
             </div>
             <div className="font-serif font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-none group-hover:text-[#e0b252] transition-colors flex items-baseline justify-center">
               <AnimatedCounter target={50} />

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { MdArrowForward } from "react-icons/md";
 
 // ═══════════════ HERO SLIDER DATA ═══════════════
 export const heroSlides = [
@@ -189,9 +190,7 @@ export default function HeroSlider() {
                   className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-lg bg-gradient-to-r from-[#e0b252] to-[#c59a3f] text-[#00153d] font-bold text-sm sm:text-base hover:brightness-110 shadow-lg shadow-black/50 transition-all hover:translate-y-[-1px] active:scale-95 group"
                 >
                   <span>{slide.primaryCta.label}</span>
-                  <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">
-                    arrow_forward
-                  </span>
+                  <MdArrowForward className="text-[18px] group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
                   href={slide.secondaryCta.href}
@@ -204,27 +203,6 @@ export default function HeroSlider() {
           </div>
         </motion.div>
       </AnimatePresence>
-
-      {/* Prev / Next Smooth Arrow Controls */}
-      <button
-        onClick={() => paginate(-1)}
-        aria-label="Previous Slide"
-        className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-black/30 hover:bg-[#e0b252] hover:text-[#00153d] text-white border border-white/20 hover:border-[#e0b252] backdrop-blur-md flex items-center justify-center transition-all duration-300 shadow-md cursor-pointer group"
-      >
-        <span className="material-symbols-outlined text-xl sm:text-2xl group-hover:-translate-x-0.5 transition-transform">
-          chevron_left
-        </span>
-      </button>
-
-      <button
-        onClick={() => paginate(1)}
-        aria-label="Next Slide"
-        className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 z-30 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-black/30 hover:bg-[#e0b252] hover:text-[#00153d] text-white border border-white/20 hover:border-[#e0b252] backdrop-blur-md flex items-center justify-center transition-all duration-300 shadow-md cursor-pointer group"
-      >
-        <span className="material-symbols-outlined text-xl sm:text-2xl group-hover:translate-x-0.5 transition-transform">
-          chevron_right
-        </span>
-      </button>
 
       {/* Bottom Indicators (Modern Gold Pills - Centered) */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2.5">

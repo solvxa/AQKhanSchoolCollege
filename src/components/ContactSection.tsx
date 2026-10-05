@@ -2,6 +2,22 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import {
+  MdLocationOn,
+  MdPhoneInTalk,
+  MdChat,
+  MdMail,
+  MdSchedule,
+  MdVerified,
+  MdCheckCircle,
+  MdPerson,
+  MdPhone,
+  MdHelpOutline,
+  MdKeyboardArrowDown,
+  MdSchool,
+  MdSend,
+  MdDirectionsBus,
+} from "react-icons/md";
 
 export default function ContactSection() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -65,7 +81,7 @@ export default function ContactSection() {
                 {/* Location */}
                 <div className="flex items-start gap-3.5 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs">
                   <div className="w-10 h-10 rounded-lg bg-[#e0b252] text-[#00153d] flex items-center justify-center shrink-0 shadow-sm">
-                    <span className="material-symbols-outlined text-[20px]">location_on</span>
+                    <MdLocationOn className="text-[20px]" />
                   </div>
                   <div>
                     <span className="text-[10.5px] font-bold text-[#e0b252] uppercase tracking-wider block">Campus Address</span>
@@ -78,7 +94,7 @@ export default function ContactSection() {
                 {/* Telephone & Helpline */}
                 <div className="flex items-start gap-3.5 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs">
                   <div className="w-10 h-10 rounded-lg bg-[#e0b252] text-[#00153d] flex items-center justify-center shrink-0 shadow-sm">
-                    <span className="material-symbols-outlined text-[20px]">phone_in_talk</span>
+                    <MdPhoneInTalk className="text-[20px]" />
                   </div>
                   <div>
                     <span className="text-[10.5px] font-bold text-[#e0b252] uppercase tracking-wider block">Admissions Helpline &amp; Office</span>
@@ -93,7 +109,7 @@ export default function ContactSection() {
                 {/* Mobile & WhatsApp */}
                 <div className="flex items-start gap-3.5 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs">
                   <div className="w-10 h-10 rounded-lg bg-[#e0b252] text-[#00153d] flex items-center justify-center shrink-0 shadow-sm">
-                    <span className="material-symbols-outlined text-[20px]">chat</span>
+                    <MdChat className="text-[20px]" />
                   </div>
                   <div>
                     <span className="text-[10.5px] font-bold text-[#e0b252] uppercase tracking-wider block">Direct WhatsApp Helpline</span>
@@ -108,7 +124,7 @@ export default function ContactSection() {
                 {/* Email */}
                 <div className="flex items-start gap-3.5 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs">
                   <div className="w-10 h-10 rounded-lg bg-[#e0b252] text-[#00153d] flex items-center justify-center shrink-0 shadow-sm">
-                    <span className="material-symbols-outlined text-[20px]">mail</span>
+                    <MdMail className="text-[20px]" />
                   </div>
                   <div>
                     <span className="text-[10.5px] font-bold text-[#e0b252] uppercase tracking-wider block">Email Inquiries</span>
@@ -123,7 +139,7 @@ export default function ContactSection() {
                 {/* Visiting Hours */}
                 <div className="flex items-start gap-3.5 p-3 rounded-xl bg-white/5 border border-white/10 backdrop-blur-xs">
                   <div className="w-10 h-10 rounded-lg bg-[#e0b252] text-[#00153d] flex items-center justify-center shrink-0 shadow-sm">
-                    <span className="material-symbols-outlined text-[20px]">schedule</span>
+                    <MdSchedule className="text-[20px]" />
                   </div>
                   <div>
                     <span className="text-[10.5px] font-bold text-[#e0b252] uppercase tracking-wider block">Office &amp; Visiting Hours</span>
@@ -139,7 +155,7 @@ export default function ContactSection() {
             {/* Institutional Footnote */}
             <div className="pt-6 mt-6 border-t border-white/15 relative z-10 flex items-center justify-between gap-3 text-xs text-slate-300">
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">verified</span>
+                <MdVerified className="text-[#e0b252] text-[18px]" />
                 <span>Bahria Town Education Trust</span>
               </div>
               <span className="text-[#e0b252] font-semibold">FBISE: 0741/2012</span>
@@ -155,7 +171,7 @@ export default function ContactSection() {
                 className="py-10 px-6 sm:px-8 text-center space-y-4 bg-slate-50/80 rounded-2xl border border-slate-200"
               >
                 <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-sm">
-                  <span className="material-symbols-outlined text-3xl">check_circle</span>
+                  <MdCheckCircle className="text-3xl" />
                 </div>
                 <h3 className="font-serif font-bold text-2xl text-[#00153d]">
                   Message Submitted Successfully
@@ -191,7 +207,7 @@ export default function ContactSection() {
                       <span className="text-rose-500">*</span>
                     </label>
                     <div className="relative">
-                      <span className="material-symbols-outlined text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2">person</span>
+                      <MdPerson className="text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2" />
                       <input
                         id="student-name"
                         type="text"
@@ -208,7 +224,7 @@ export default function ContactSection() {
                       <span className="text-rose-500">*</span>
                     </label>
                     <div className="relative">
-                      <span className="material-symbols-outlined text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2">phone</span>
+                      <MdPhone className="text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2" />
                       <input
                         id="parent-phone"
                         type="tel"
@@ -228,7 +244,7 @@ export default function ContactSection() {
                       <span className="text-slate-400 text-[11px] font-normal">(Optional)</span>
                     </label>
                     <div className="relative">
-                      <span className="material-symbols-outlined text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2">mail</span>
+                      <MdMail className="text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2" />
                       <input
                         id="parent-email"
                         type="email"
@@ -244,7 +260,7 @@ export default function ContactSection() {
                       <span className="text-rose-500">*</span>
                     </label>
                     <div className="relative">
-                      <span className="material-symbols-outlined text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2">help_outline</span>
+                      <MdHelpOutline className="text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2" />
                       <select
                         id="inquiry-type"
                         required
@@ -259,7 +275,7 @@ export default function ContactSection() {
                         <option value="transfer">School Migration / Transfer</option>
                         <option value="general">General Campus Inquiry</option>
                       </select>
-                      <span className="material-symbols-outlined text-slate-400 text-[18px] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+                      <MdKeyboardArrowDown className="text-slate-400 text-[18px] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
                     </div>
                   </div>
                 </div>
@@ -271,7 +287,7 @@ export default function ContactSection() {
                     <span className="text-rose-500">*</span>
                   </label>
                   <div className="relative">
-                    <span className="material-symbols-outlined text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2">school</span>
+                    <MdSchool className="text-slate-400 text-[18px] absolute left-3.5 top-1/2 -translate-y-1/2" />
                     <select
                       id="grade-wing"
                       required
@@ -288,7 +304,7 @@ export default function ContactSection() {
                       <option value="ics">College: ICS (Computer Science &amp; AI)</option>
                       <option value="icom">College: I.Com</option>
                     </select>
-                    <span className="material-symbols-outlined text-slate-400 text-[18px] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+                    <MdKeyboardArrowDown className="text-slate-400 text-[18px] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
                   </div>
                 </div>
 
@@ -334,7 +350,7 @@ export default function ContactSection() {
                     ) : (
                       <>
                         <span>Send Message &amp; Submit Inquiry</span>
-                        <span className="material-symbols-outlined text-[17px] text-[#e0b252] group-hover:translate-x-1 transition-transform">send</span>
+                        <MdSend className="text-[17px] text-[#e0b252] group-hover:translate-x-1 transition-transform" />
                       </>
                     )}
                   </button>
@@ -354,7 +370,7 @@ export default function ContactSection() {
         >
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-xl bg-[#00153d]/5 text-[#00153d] border border-[#00153d]/10 flex items-center justify-center shrink-0 shadow-sm">
-              <span className="material-symbols-outlined text-[28px] text-[#00153d]">directions_bus</span>
+              <MdDirectionsBus className="text-[28px] text-[#00153d]" />
             </div>
             <div>
               <h4 className="font-serif font-bold text-base sm:text-lg text-[#00153d]">
@@ -370,7 +386,7 @@ export default function ContactSection() {
               className="px-5 py-2.5 rounded-xl bg-[#00153d] text-white font-bold text-xs sm:text-sm hover:bg-[#0a2558] transition-colors inline-flex items-center gap-2 shadow-sm"
               href="tel:+92515705800"
             >
-              <span className="material-symbols-outlined text-[16px] text-[#e0b252]">call</span>
+              <MdPhone className="text-[16px] text-[#e0b252]" />
               <span>Call Transport Office</span>
             </a>
           </div>

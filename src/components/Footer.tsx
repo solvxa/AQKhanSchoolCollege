@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaYoutube, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { MdChevronRight, MdLocationOn, MdPhone, MdMail, MdSchedule } from "react-icons/md";
 
 export default function Footer() {
   return (
@@ -97,31 +98,31 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-slate-300">
               <li>
                 <a className="hover:text-[#e0b252] transition-colors flex items-center gap-1.5 group" href="#overview">
-                  <span className="material-symbols-outlined text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+                  <MdChevronRight className="text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform" />
                   About Campus
                 </a>
               </li>
               <li>
                 <a className="hover:text-[#e0b252] transition-colors flex items-center gap-1.5 group" href="#wings">
-                  <span className="material-symbols-outlined text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+                  <MdChevronRight className="text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform" />
                   Academic Wings
                 </a>
               </li>
               <li>
                 <a className="hover:text-[#e0b252] transition-colors flex items-center gap-1.5 group" href="#co-curricular">
-                  <span className="material-symbols-outlined text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+                  <MdChevronRight className="text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform" />
                   Student Life
                 </a>
               </li>
               <li>
                 <a className="hover:text-[#e0b252] transition-colors flex items-center gap-1.5 group" href="#faculty">
-                  <span className="material-symbols-outlined text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+                  <MdChevronRight className="text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform" />
                   Faculty &amp; Staff
                 </a>
               </li>
               <li>
                 <a className="hover:text-[#e0b252] transition-colors flex items-center gap-1.5 group" href="#contact">
-                  <span className="material-symbols-outlined text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+                  <MdChevronRight className="text-[13px] text-[#e0b252] group-hover:translate-x-0.5 transition-transform" />
                   Contact &amp; Admissions
                 </a>
               </li>
@@ -166,21 +167,21 @@ export default function Footer() {
             </h4>
             <div className="space-y-2.5 text-xs text-slate-300">
               <p className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-[15px] text-[#e0b252] shrink-0 mt-0.5">pin_drop</span>
+                <MdLocationOn className="text-[15px] text-[#e0b252] shrink-0 mt-0.5" />
                 <span>Safari Villas-1, Bahria Town, Islamabad</span>
               </p>
               <p className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[15px] text-[#e0b252] shrink-0">call</span>
+                <MdPhone className="text-[15px] text-[#e0b252] shrink-0" />
                 <a href="tel:+92515707166" className="hover:text-white transition-colors">+92 51 5707166</a>
                 <span className="text-slate-500">•</span>
                 <a href="tel:+92515705800" className="hover:text-white transition-colors">5705800</a>
               </p>
               <p className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[15px] text-[#e0b252] shrink-0">mail</span>
+                <MdMail className="text-[15px] text-[#e0b252] shrink-0" />
                 <a href="mailto:aqksafari1@gmail.com" className="hover:text-white transition-colors">aqksafari1@gmail.com</a>
               </p>
               <p className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[15px] text-[#e0b252] shrink-0">schedule</span>
+                <MdSchedule className="text-[15px] text-[#e0b252] shrink-0" />
                 <span>Mon – Sat: 08:00 AM – 02:30 PM</span>
               </p>
             </div>

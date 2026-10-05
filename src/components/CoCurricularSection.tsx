@@ -2,6 +2,18 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  MdShield,
+  MdSportsCricket,
+  MdEmojiEvents,
+  MdExplore,
+  MdCheckCircle,
+  MdVerified,
+  MdWorkspacePremium,
+  MdTravelExplore,
+  MdStars,
+  MdArrowForward,
+} from "react-icons/md";
 
 export default function CoCurricularSection() {
   return (
@@ -50,7 +62,7 @@ export default function CoCurricularSection() {
               {/* Top Icon & Level Tag */}
               <div className="flex items-center justify-between">
                 <div className="w-11 h-11 rounded-xl bg-[#00153d]/5 text-[#00153d] group-hover:bg-[#00153d] group-hover:text-[#e0b252] flex items-center justify-center shrink-0 border border-[#00153d]/10 transition-colors duration-300 shadow-sm">
-                  <span className="material-symbols-outlined text-[24px]">shield</span>
+                  <MdShield className="text-[24px]" />
                 </div>
                 <span className="text-[10.5px] font-bold text-[#00153d] uppercase tracking-wider bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200/60">
                   House System
@@ -92,11 +104,11 @@ export default function CoCurricularSection() {
               {/* Feature Checkmarks */}
               <ul className="pt-0.5 space-y-1.5 text-xs text-slate-700 font-medium">
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#e0b252] text-[16px] shrink-0">check_circle</span>
+                  <MdCheckCircle className="text-[#e0b252] text-[16px] shrink-0" />
                   <span className="truncate">Student Council governance</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#e0b252] text-[16px] shrink-0">check_circle</span>
+                  <MdCheckCircle className="text-[#e0b252] text-[16px] shrink-0" />
                   <span className="truncate">Inter-House Trophy championship</span>
                 </li>
               </ul>
@@ -105,7 +117,7 @@ export default function CoCurricularSection() {
             <div className="p-5 pt-0">
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>Prefectural Governance</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">verified</span>
+                <MdVerified className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -123,7 +135,7 @@ export default function CoCurricularSection() {
               {/* Top Icon & Level Tag */}
               <div className="flex items-center justify-between">
                 <div className="w-11 h-11 rounded-xl bg-[#00153d]/5 text-[#00153d] group-hover:bg-[#00153d] group-hover:text-[#e0b252] flex items-center justify-center shrink-0 border border-[#00153d]/10 transition-colors duration-300 shadow-sm">
-                  <span className="material-symbols-outlined text-[24px]">sports_cricket</span>
+                  <MdSportsCricket className="text-[24px]" />
                 </div>
                 <span className="text-[10.5px] font-bold text-[#00153d] uppercase tracking-wider bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200/60">
                   Physical Grit
@@ -165,11 +177,11 @@ export default function CoCurricularSection() {
               {/* Feature Checkmarks */}
               <ul className="pt-0.5 space-y-1.5 text-xs text-slate-700 font-medium">
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#e0b252] text-[16px] shrink-0">check_circle</span>
+                  <MdCheckCircle className="text-[#e0b252] text-[16px] shrink-0" />
                   <span className="truncate">Cadet-inspired morning drills</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#e0b252] text-[16px] shrink-0">check_circle</span>
+                  <MdCheckCircle className="text-[#e0b252] text-[16px] shrink-0" />
                   <span className="truncate">15+ Regional Interschool Cups</span>
                 </li>
               </ul>
@@ -178,7 +190,7 @@ export default function CoCurricularSection() {
             <div className="p-5 pt-0">
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>15+ Regional Trophies</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">trophy</span>
+                <MdEmojiEvents className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -196,7 +208,7 @@ export default function CoCurricularSection() {
               {/* Top Icon & Level Tag */}
               <div className="flex items-center justify-between">
                 <div className="w-11 h-11 rounded-xl bg-[#00153d]/5 text-[#00153d] group-hover:bg-[#00153d] group-hover:text-[#e0b252] flex items-center justify-center shrink-0 border border-[#00153d]/10 transition-colors duration-300 shadow-sm">
-                  <span className="material-symbols-outlined text-[24px]">emoji_events</span>
+                  <MdEmojiEvents className="text-[24px]" />
                 </div>
                 <span className="text-[10.5px] font-bold text-[#00153d] uppercase tracking-wider bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200/60">
                   National Stage
@@ -238,11 +250,11 @@ export default function CoCurricularSection() {
               {/* Feature Checkmarks */}
               <ul className="pt-0.5 space-y-1.5 text-xs text-slate-700 font-medium">
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#e0b252] text-[16px] shrink-0">check_circle</span>
+                  <MdCheckCircle className="text-[#e0b252] text-[16px] shrink-0" />
                   <span className="truncate">FBISE podium debate finishes</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#e0b252] text-[16px] shrink-0">check_circle</span>
+                  <MdCheckCircle className="text-[#e0b252] text-[16px] shrink-0" />
                   <span className="truncate">Parliamentary decorum skills</span>
                 </li>
               </ul>
@@ -251,7 +263,7 @@ export default function CoCurricularSection() {
             <div className="p-5 pt-0">
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>FBISE Declamation Honors</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">workspace_premium</span>
+                <MdWorkspacePremium className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -269,7 +281,7 @@ export default function CoCurricularSection() {
               {/* Top Icon & Level Tag */}
               <div className="flex items-center justify-between">
                 <div className="w-11 h-11 rounded-xl bg-[#00153d]/5 text-[#00153d] group-hover:bg-[#00153d] group-hover:text-[#e0b252] flex items-center justify-center shrink-0 border border-[#00153d]/10 transition-colors duration-300 shadow-sm">
-                  <span className="material-symbols-outlined text-[24px]">explore</span>
+                  <MdExplore className="text-[24px]" />
                 </div>
                 <span className="text-[10.5px] font-bold text-[#00153d] uppercase tracking-wider bg-slate-100 px-2.5 py-1 rounded-md border border-slate-200/60">
                   Fieldwork
@@ -311,11 +323,11 @@ export default function CoCurricularSection() {
               {/* Feature Checkmarks */}
               <ul className="pt-0.5 space-y-1.5 text-xs text-slate-700 font-medium">
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#e0b252] text-[16px] shrink-0">check_circle</span>
+                  <MdCheckCircle className="text-[#e0b252] text-[16px] shrink-0" />
                   <span className="truncate">Scientist &amp; researcher dialogue</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#e0b252] text-[16px] shrink-0">check_circle</span>
+                  <MdCheckCircle className="text-[#e0b252] text-[16px] shrink-0" />
                   <span className="truncate">National heritage awareness</span>
                 </li>
               </ul>
@@ -324,7 +336,7 @@ export default function CoCurricularSection() {
             <div className="p-5 pt-0">
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#00153d]">
                 <span>Experiential Learning</span>
-                <span className="material-symbols-outlined text-[#e0b252] text-[18px]">travel_explore</span>
+                <MdTravelExplore className="text-[#e0b252] text-[18px]" />
               </div>
             </div>
           </motion.div>
@@ -340,7 +352,7 @@ export default function CoCurricularSection() {
         >
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-xl bg-[#e0b252] text-[#00153d] flex items-center justify-center shrink-0 font-bold shadow-md">
-              <span className="material-symbols-outlined text-2xl">stars</span>
+              <MdStars className="text-2xl" />
             </div>
             <div>
               <h4 className="font-serif font-bold text-lg text-white">Holistic Character &amp; Leadership Ecosystem</h4>
@@ -352,7 +364,7 @@ export default function CoCurricularSection() {
             className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#e0b252] to-[#c59a3f] text-[#00153d] font-bold text-xs sm:text-sm hover:brightness-110 transition-all shrink-0 shadow-md inline-flex items-center gap-2"
           >
             <span>Inquire for Co-Curricular Enrollment</span>
-            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+            <MdArrowForward className="text-[16px]" />
           </a>
         </motion.div>
       </div>
